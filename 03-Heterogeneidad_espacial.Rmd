@@ -1,0 +1,7 @@
+# Heterogeneidad espacial
+
+##	Concepto de Heterogeneidad Espacial
+
+##	Métodos para detectar Heterogeneidad Espacial
+
+##	Estrategias para abordar la Heterogeneidad Espacial

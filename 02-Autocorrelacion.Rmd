@@ -1,0 +1,15 @@
+# Medidas de autocorrelación espacial
+
+## Definición de autocorrelación espacial
+
+## Medidas globales para la autocorrelación espacial
+
+### Índice de Moran Global
+
+### Índice de Geary
+
+##	Medidas locales para la autocorrelación espacial
+
+### Índice de Moran Local
+
+### Indicadores de agrupamiento espacial

@@ -1,0 +1,5 @@
+# Inferencia y Diagnóstico en Econometría Espacial 
+
+##	Pruebas de especificación espacial: Moran, LM, Wald, LR
+
+##	Métodos bootstrap para inferencia

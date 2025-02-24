@@ -1,2 +1,0 @@
-# Medidas de autocorrelación espacial
-

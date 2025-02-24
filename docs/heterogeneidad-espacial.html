@@ -23,7 +23,7 @@
 <meta name="author" content="Profesor Alejandro Alberto Miliano" />
 
 
-<meta name="date" content="2025-02-23" />
+<meta name="date" content="2025-02-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="medidas-de-autocorrelación-espacial.html"/>
-
+<link rel="next" href="modelos-de-regresión-espacial.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -78,10 +78,63 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#motivación-y-contexto-de-la-econometría-espacial"><i class="fa fa-check"></i><b>1.1</b> Motivación y contexto de la econometría espacial</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#motivación-y-contexto-de-la-econometría-espacial"><i class="fa fa-check"></i><b>1.1</b> Motivación y contexto de la econometría espacial</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#dependencia-espacial-y-heterogeneidad-en-los-datos-económicos"><i class="fa fa-check"></i><b>1.1.1</b> Dependencia espacial y heterogeneidad en los datos económicos</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#limitaciones-de-la-econometría-tradicional-cuando-se-aplican-a-datos-espaciales"><i class="fa fa-check"></i><b>1.1.2</b> Limitaciones de la econometría tradicional cuando se aplican a datos espaciales</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html"><i class="fa fa-check"></i><b>2</b> Medidas de autocorrelación espacial</a></li>
-<li class="chapter" data-level="3" data-path="heterogeneidad-espacial.html"><a href="heterogeneidad-espacial.html"><i class="fa fa-check"></i><b>3</b> Heterogeneidad espacial</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#conceptos-básicos-de-datos-espaciales"><i class="fa fa-check"></i><b>1.2</b> Conceptos básicos de datos espaciales</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#qué-son-los-datos-espaciales"><i class="fa fa-check"></i><b>1.2.1</b> ¿Qué son los datos espaciales?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#tipos-de-datos-espaciales-de-área-polígonos-puntos-y-redes"><i class="fa fa-check"></i><b>1.2.2</b> Tipos de datos espaciales: de área (polígonos), puntos y redes</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#representación-de-los-datos-espaciales-en-r-y-python"><i class="fa fa-check"></i><b>1.2.3</b> Representación de los datos espaciales en R y Python</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#construcción-de-la-matriz-de-pesos-espaciales-w"><i class="fa fa-check"></i><b>1.3</b> Construcción de la matriz de pesos espaciales W</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#vecinos-contiguos-queen-y-rook"><i class="fa fa-check"></i><b>1.3.1</b> Vecinos contiguos (Queen y Rook)</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#distancia-k-más-cercana"><i class="fa fa-check"></i><b>1.3.2</b> Distancia k más cercana</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#matrices-de-pesos-estandarizadas"><i class="fa fa-check"></i><b>1.3.3</b> Matrices de pesos estandarizadas</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html"><i class="fa fa-check"></i><b>2</b> Medidas de autocorrelación espacial</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#definición-de-autocorrelación-espacial"><i class="fa fa-check"></i><b>2.1</b> Definición de autocorrelación espacial</a></li>
+<li class="chapter" data-level="2.2" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#medidas-globales-para-la-autocorrelación-espacial"><i class="fa fa-check"></i><b>2.2</b> Medidas globales para la autocorrelación espacial</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#índice-de-moran-global"><i class="fa fa-check"></i><b>2.2.1</b> Índice de Moran Global</a></li>
+<li class="chapter" data-level="2.2.2" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#índice-de-geary"><i class="fa fa-check"></i><b>2.2.2</b> Índice de Geary</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#medidas-locales-para-la-autocorrelación-espacial"><i class="fa fa-check"></i><b>2.3</b> Medidas locales para la autocorrelación espacial</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#índice-de-moran-local"><i class="fa fa-check"></i><b>2.3.1</b> Índice de Moran Local</a></li>
+<li class="chapter" data-level="2.3.2" data-path="medidas-de-autocorrelación-espacial.html"><a href="medidas-de-autocorrelación-espacial.html#indicadores-de-agrupamiento-espacial"><i class="fa fa-check"></i><b>2.3.2</b> Indicadores de agrupamiento espacial</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="heterogeneidad-espacial.html"><a href="heterogeneidad-espacial.html"><i class="fa fa-check"></i><b>3</b> Heterogeneidad espacial</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="heterogeneidad-espacial.html"><a href="heterogeneidad-espacial.html#concepto-de-heterogeneidad-espacial"><i class="fa fa-check"></i><b>3.1</b> Concepto de Heterogeneidad Espacial</a></li>
+<li class="chapter" data-level="3.2" data-path="heterogeneidad-espacial.html"><a href="heterogeneidad-espacial.html#métodos-para-detectar-heterogeneidad-espacial"><i class="fa fa-check"></i><b>3.2</b> Métodos para detectar Heterogeneidad Espacial</a></li>
+<li class="chapter" data-level="3.3" data-path="heterogeneidad-espacial.html"><a href="heterogeneidad-espacial.html#estrategias-para-abordar-la-heterogeneidad-espacial"><i class="fa fa-check"></i><b>3.3</b> Estrategias para abordar la Heterogeneidad Espacial</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="modelos-de-regresión-espacial.html"><a href="modelos-de-regresión-espacial.html"><i class="fa fa-check"></i><b>4</b> Modelos de Regresión Espacial</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="modelos-de-regresión-espacial.html"><a href="modelos-de-regresión-espacial.html#modelo-de-rezago-espacial-sar-spacial-autoregressive-model"><i class="fa fa-check"></i><b>4.1</b> Modelo de rezago espacial (SAR, Spacial Autoregressive Model)</a></li>
+<li class="chapter" data-level="4.2" data-path="modelos-de-regresión-espacial.html"><a href="modelos-de-regresión-espacial.html#modelo-de-errores-espaciales-sem-spatial-error-model"><i class="fa fa-check"></i><b>4.2</b> Modelo de errores espaciales (SEM, Spatial Error Model)</a></li>
+<li class="chapter" data-level="4.3" data-path="modelos-de-regresión-espacial.html"><a href="modelos-de-regresión-espacial.html#modelo-durbin-espacial-sdm-spatial-durbin-model"><i class="fa fa-check"></i><b>4.3</b> Modelo Durbin Espacial (SDM, Spatial Durbin Model)</a></li>
+<li class="chapter" data-level="4.4" data-path="modelos-de-regresión-espacial.html"><a href="modelos-de-regresión-espacial.html#aplicaciones-en-competencia-entre-empresas-precios-de-exportación-e-inversión-extranjera"><i class="fa fa-check"></i><b>4.4</b> Aplicaciones en competencia entre empresas, precios de exportación e inversión extranjera</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="modelos-de-panel-espacial.html"><a href="modelos-de-panel-espacial.html"><i class="fa fa-check"></i><b>5</b> Modelos de Panel Espacial</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="modelos-de-panel-espacial.html"><a href="modelos-de-panel-espacial.html#introducción-a-modelos-de-datos-panel-espaciales"><i class="fa fa-check"></i><b>5.1</b> Introducción a modelos de datos panel espaciales</a></li>
+<li class="chapter" data-level="5.2" data-path="modelos-de-panel-espacial.html"><a href="modelos-de-panel-espacial.html#modelos-sar-y-sem-en-panel"><i class="fa fa-check"></i><b>5.2</b> Modelos SAR y SEM en panel</a></li>
+<li class="chapter" data-level="5.3" data-path="modelos-de-panel-espacial.html"><a href="modelos-de-panel-espacial.html#métodos-de-estimación-mínimos-cuadrados-generalizados-gls-y-métodos-de-máxima-verosimilitud"><i class="fa fa-check"></i><b>5.3</b> Métodos de estimación: mínimos cuadrados generalizados (GLS) y métodos de máxima verosimilitud</a></li>
+<li class="chapter" data-level="5.4" data-path="modelos-de-panel-espacial.html"><a href="modelos-de-panel-espacial.html#aplicaciones-en-desempeño-económico-regional-y-productividad-agrícola"><i class="fa fa-check"></i><b>5.4</b> Aplicaciones en desempeño económico regional y productividad agrícola</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="inferencia-y-diagnóstico-en-econometría-espacial.html"><a href="inferencia-y-diagnóstico-en-econometría-espacial.html"><i class="fa fa-check"></i><b>6</b> Inferencia y Diagnóstico en Econometría Espacial</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="inferencia-y-diagnóstico-en-econometría-espacial.html"><a href="inferencia-y-diagnóstico-en-econometría-espacial.html#pruebas-de-especificación-espacial-moran-lm-wald-lr"><i class="fa fa-check"></i><b>6.1</b> Pruebas de especificación espacial: Moran, LM, Wald, LR</a></li>
+<li class="chapter" data-level="6.2" data-path="inferencia-y-diagnóstico-en-econometría-espacial.html"><a href="inferencia-y-diagnóstico-en-econometría-espacial.html#métodos-bootstrap-para-inferencia"><i class="fa fa-check"></i><b>6.2</b> Métodos bootstrap para inferencia</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -103,15 +156,24 @@
             <section class="normal" id="section-">
 <div id="heterogeneidad-espacial" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Heterogeneidad espacial<a href="heterogeneidad-espacial.html#heterogeneidad-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="concepto-de-heterogeneidad-espacial" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Concepto de Heterogeneidad Espacial<a href="heterogeneidad-espacial.html#concepto-de-heterogeneidad-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="métodos-para-detectar-heterogeneidad-espacial" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Métodos para detectar Heterogeneidad Espacial<a href="heterogeneidad-espacial.html#métodos-para-detectar-heterogeneidad-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="estrategias-para-abordar-la-heterogeneidad-espacial" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Estrategias para abordar la Heterogeneidad Espacial<a href="heterogeneidad-espacial.html#estrategias-para-abordar-la-heterogeneidad-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="medidas-de-autocorrelación-espacial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="medidas-de-autocorrelación-espacial.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelos-de-regresión-espacial.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -142,7 +204,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/edit/main/03-race.Rmd",
+    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/edit/main/03-Heterogeneidad_espacial.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -150,7 +212,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/blob/main/03-race.Rmd",
+    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/blob/main/03-Heterogeneidad_espacial.Rmd",
     "text": null
   },
   "download": null,

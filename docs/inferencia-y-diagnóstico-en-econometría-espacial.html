@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Econometría espacial</title>
-  <meta name="description" content="Econometría espacial" />
+  <title>Chapter 6 Inferencia y Diagnóstico en Econometría Espacial | Econometría espacial</title>
+  <meta name="description" content="Chapter 6 Inferencia y Diagnóstico en Econometría Espacial | Econometría espacial" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Econometría espacial" />
+  <meta property="og:title" content="Chapter 6 Inferencia y Diagnóstico en Econometría Espacial | Econometría espacial" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Econometría espacial" />
+  <meta name="twitter:title" content="Chapter 6 Inferencia y Diagnóstico en Econometría Espacial | Econometría espacial" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="modelos-de-panel-espacial.html"/>
 
-<link rel="next" href="medidas-de-autocorrelación-espacial.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -154,46 +154,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Econometría espacial</h1>
-<p class="author"><em>Profesor Alejandro Alberto Miliano</em></p>
-<p class="date"><em>2025-02-24</em></p>
+<div id="inferencia-y-diagnóstico-en-econometría-espacial" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Inferencia y Diagnóstico en Econometría Espacial<a href="inferencia-y-diagnóstico-en-econometría-espacial.html#inferencia-y-diagnóstico-en-econometría-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="pruebas-de-especificación-espacial-moran-lm-wald-lr" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Pruebas de especificación espacial: Moran, LM, Wald, LR<a href="inferencia-y-diagnóstico-en-econometría-espacial.html#pruebas-de-especificación-espacial-moran-lm-wald-lr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="introducción" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introducción<a href="index.html#introducción" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="motivación-y-contexto-de-la-econometría-espacial" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Motivación y contexto de la econometría espacial<a href="index.html#motivación-y-contexto-de-la-econometría-espacial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="dependencia-espacial-y-heterogeneidad-en-los-datos-económicos" class="section level3 hasAnchor" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Dependencia espacial y heterogeneidad en los datos económicos<a href="index.html#dependencia-espacial-y-heterogeneidad-en-los-datos-económicos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="limitaciones-de-la-econometría-tradicional-cuando-se-aplican-a-datos-espaciales" class="section level3 hasAnchor" number="1.1.2">
-<h3><span class="header-section-number">1.1.2</span> Limitaciones de la econometría tradicional cuando se aplican a datos espaciales<a href="index.html#limitaciones-de-la-econometría-tradicional-cuando-se-aplican-a-datos-espaciales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
-<div id="conceptos-básicos-de-datos-espaciales" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Conceptos básicos de datos espaciales<a href="index.html#conceptos-básicos-de-datos-espaciales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="qué-son-los-datos-espaciales" class="section level3 hasAnchor" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> ¿Qué son los datos espaciales?<a href="index.html#qué-son-los-datos-espaciales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="tipos-de-datos-espaciales-de-área-polígonos-puntos-y-redes" class="section level3 hasAnchor" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> Tipos de datos espaciales: de área (polígonos), puntos y redes<a href="index.html#tipos-de-datos-espaciales-de-área-polígonos-puntos-y-redes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="representación-de-los-datos-espaciales-en-r-y-python" class="section level3 hasAnchor" number="1.2.3">
-<h3><span class="header-section-number">1.2.3</span> Representación de los datos espaciales en R y Python<a href="index.html#representación-de-los-datos-espaciales-en-r-y-python" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
-<div id="construcción-de-la-matriz-de-pesos-espaciales-w" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> Construcción de la matriz de pesos espaciales W<a href="index.html#construcción-de-la-matriz-de-pesos-espaciales-w" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="vecinos-contiguos-queen-y-rook" class="section level3 hasAnchor" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> Vecinos contiguos (Queen y Rook)<a href="index.html#vecinos-contiguos-queen-y-rook" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="distancia-k-más-cercana" class="section level3 hasAnchor" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> Distancia k más cercana<a href="index.html#distancia-k-más-cercana" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="matrices-de-pesos-estandarizadas" class="section level3 hasAnchor" number="1.3.3">
-<h3><span class="header-section-number">1.3.3</span> Matrices de pesos estandarizadas<a href="index.html#matrices-de-pesos-estandarizadas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="métodos-bootstrap-para-inferencia" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Métodos bootstrap para inferencia<a href="inferencia-y-diagnóstico-en-econometría-espacial.html#métodos-bootstrap-para-inferencia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
-</div>
 </div>
 </div>
             </section>
@@ -201,8 +169,8 @@
           </div>
         </div>
       </div>
+<a href="modelos-de-panel-espacial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="medidas-de-autocorrelación-espacial.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -233,7 +201,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/edit/main/index.Rmd",
+    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/edit/main/06-Inferencia_Diagnostico.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -241,7 +209,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/blob/main/index.Rmd",
+    "link": "https://github.com/AlbertoMiliano/Econometria-Espacial/blob/main/06-Inferencia_Diagnostico.Rmd",
     "text": null
   },
   "download": null,

@@ -9,3 +9,24 @@ site: bookdown::bookdown_site
 
 ## Motivación y contexto de la econometría espacial
 
+### Dependencia espacial y heterogeneidad en los datos económicos
+
+### Limitaciones de la econometría tradicional cuando se aplican a datos espaciales
+
+## Conceptos básicos de datos espaciales
+
+### ¿Qué son los datos espaciales?
+
+### Tipos de datos espaciales: de área (polígonos), puntos y redes
+
+### Representación de los datos espaciales en R y Python
+
+## Construcción de la matriz de pesos espaciales W
+
+### Vecinos contiguos (Queen y Rook)
+
+### Distancia k más cercana
+
+### Matrices de pesos estandarizadas
+
+

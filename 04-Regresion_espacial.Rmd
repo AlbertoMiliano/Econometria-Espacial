@@ -1,0 +1,9 @@
+# Modelos de Regresión Espacial 
+
+##	Modelo de rezago espacial (SAR, Spacial Autoregressive Model)
+
+##	Modelo de errores espaciales (SEM, Spatial Error Model)
+
+##	Modelo Durbin Espacial (SDM, Spatial Durbin Model)
+
+##	Aplicaciones en competencia entre empresas, precios de exportación e inversión extranjera

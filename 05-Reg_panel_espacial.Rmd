@@ -1,0 +1,9 @@
+# Modelos de Panel Espacial
+
+##	Introducción a modelos de datos panel espaciales
+
+##	Modelos SAR y SEM en panel
+
+##	Métodos de estimación: mínimos cuadrados generalizados (GLS) y métodos de máxima verosimilitud
+
+##	Aplicaciones en desempeño económico regional y productividad agrícola
