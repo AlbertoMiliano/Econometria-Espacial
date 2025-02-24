@@ -1,6 +1,8 @@
 bookdown::gitbook:
   css: style.css
   config:
+    language:
+      chapter_name: "Capítulo "
     toc:
       before: |
         <li><a href="./">Econometría espacial</a></li>

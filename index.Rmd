@@ -2,6 +2,7 @@
 title: "Econometría espacial"
 author: "Profesor Alejandro Alberto Miliano"
 date: "`r Sys.Date()`"
+lang: "es"
 site: bookdown::bookdown_site
 ---
 
