@@ -1,4 +1,5 @@
-# Econometría espacial con aplicaciones a la agricultura, ganadería y al sector forestal
+# Econometría espacial
+Aplicaciones a la agricultura, ganadería y al sector forestal
 
 ## Objetivo general
 El presente curso tiene como objetivo proporcionar las herramientas teóricas y prácticas para modelar fenómenos económicos con una estructura espacial, abordando la dependencia y heterogeneidad espacial en los datos. Se utilizarán los lenguajes de programación R y Python para la implementación de técnicas y análisis empíricos.
