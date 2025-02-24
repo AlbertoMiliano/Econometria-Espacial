@@ -1,0 +1,4 @@
+introducción
+motivación-y-contexto-de-la-econometría-espacial
+medidas-de-autocorrelación-espacial
+heterogeneidad-espacial

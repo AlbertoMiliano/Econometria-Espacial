@@ -1,9 +1,11 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Econometría espacial"
+author: "Profesor Alejandro Alberto Miliano"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Introducción
+
+## Motivación y contexto de la econometría espacial
 
